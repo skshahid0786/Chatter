@@ -1,0 +1,247 @@
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* main.css */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #00f;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+header .logo img {
+    height: 50px;
+    text-align: center;
+}
+
+header .menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+header .menu li {
+    display: inline;
+    align-items: center;
+}
+
+header .menu a {
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+header .menu a:hover {
+    color: #007bff;
+}
+
+.download-buttons {
+    text-align: center;
+}
+
+.download-buttons .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.download-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-color: #00f;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.hero-content h6 {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+.hero-content h5 {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffff00;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Controls spacing between button and text */
+}
+
+.hero-buttons .btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #28a745;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 2;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #218838;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #00f;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.video-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.video-wrapper video {
+    width: 80%;
+    max-width: 700px;
+    height: 180px;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img img {
+    width: 80%;
+    max-width: 700px;
+    height: 180px;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 15px;
+}
+
+footer .social-links a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+}
+
+footer .social-links a:hover img {
+    opacity: 0.7;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-buttons {
+        margin-top: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
